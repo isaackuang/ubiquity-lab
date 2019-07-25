@@ -1,0 +1,10 @@
+version: "3"
+services:
+  svc:
+    build:
+        context: .
+        dockerfile: docker-files/Dockerfile
+    volumes:
+        - ./code:/var/www/html
+    ports:
+        - 80:80
